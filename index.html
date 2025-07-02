@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sébastien et Laurem">
+    <link rel="stylesheet" href="styles.css">
+    <title>TicketHack</title>
+</head>
+<body>
+
+<!-- Header de la page-->
+    <header>
+        <!--Navbar de la page-->
+        <nav>
+            <a href="index.html" class="logo">Tickethack</a>
+            <div class="nav-links">
+            <a href="cart.html">Cart</a>
+            <a href="bookings.html">Bookings</a>
+            </div>
+    </nav>
+    <!--Titre header et accroche-->
+    <div class="title">
+        <h1>Explore the world effortlessly by train!</h1>
+        <p>Compare, book and enjoy cheap prices for train tickets; your journey starts on Tickethack.</p>
+    </div>
+    </header>
+    <!--Contenu Principal-->
+    <main class="main-container">
+
+        <!--Recherche trajets-->
+        <div class="search-container">
+            <input type="text" id="departure" placeholder="Departure">
+            <input type="text" id="arrival" placeholder="Arrival">
+            <input type="date" id="date" placeholder="23/06/2022">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!--Résultat de la recherche--> 
+        <div class="results-container">
+            <!--Affichage par défaut-->
+            <div id="default" class="state-display">
+                <img src="/images/train.png" alt="icon of a train">
+                <hr class="divider">
+                <p>It's time to book your future trip.</p>
+            </div>
+
+            <!--Affichage erreur-->
+            <div id="error" class="state-display">
+                <img src="/images/notfound.png" alt="Magnifier icon">
+                <hr class="divider">
+                <p>No trip found.</p>
+            </div>
+            <!--Affichage des résultats avec js-->
+            <div id="results">
+                
+            </div>
+
+        </div>
+    </main>
+
+    
+</body>
+</html>
